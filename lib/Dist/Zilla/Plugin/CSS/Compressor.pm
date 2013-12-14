@@ -1,7 +1,6 @@
 package Dist::Zilla::Plugin::CSS::Compressor;
 
 use Moose;
-use v5.10;
 use CSS::Compressor qw( css_compress );
 use Dist::Zilla::File::FromCode;
 
