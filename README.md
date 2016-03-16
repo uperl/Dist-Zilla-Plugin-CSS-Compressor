@@ -42,12 +42,6 @@ which generates a `foo.min.css` for each `foo.css`.
 Output filename.  Not used by default, but if specified, all CSS files are merged and
 compressed into a single file using this as the output filename.
 
-# METHODS
-
-## $plugin->gather\_files( $arg )
-
-This method adds the compressed CSS files to your distribution.
-
 # AUTHOR
 
 Graham Ollis &lt;plicease@cpan.org>
