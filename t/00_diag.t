@@ -1,7 +1,7 @@
-use strict;
-use warnings;
+use Test2::V0 -no_srand => 1;
 use Config;
-use Test::More tests => 1;
+
+eval q{ require Test::More };
 
 # This .t file is generated.
 # make changes instead to dist.ini
@@ -14,6 +14,7 @@ $modules{$_} = $_ for qw(
   Dist::Zilla
   ExtUtils::MakeMaker
   Moose
+  Test2::V0
   Test::DZil
   Test::More
   namespace::autoclean
@@ -63,7 +64,7 @@ if(@keys > 0)
 
 diag sprintf $format, 'perl ', $];
 
-foreach my $module (@modules)
+foreach my $module (sort @modules)
 {
   if(eval qq{ require $module; 1 })
   {
@@ -85,3 +86,4 @@ if($post_diag)
 
 spacer;
 
+done_testing;
