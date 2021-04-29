@@ -1,7 +1,8 @@
 package Dist::Zilla::Plugin::CSS::Compressor {
 
-  use 5.014;
   use Moose;
+  use 5.020;
+  use experimental qw( postderef );
   use CSS::Compressor qw( css_compress );
   use Dist::Zilla::File::FromCode;
 
@@ -81,8 +82,8 @@ compressed into a single file using this as the output filename.
   
     my $list = sub {
       defined $self->finder 
-      ? @{ $self->zilla->find_files($self->finder) }
-      : grep { $_->name =~ /\.css$/ && $_->name !~ /\.min\./ } @{ $self->zilla->files };
+      ? $self->zilla->find_files($self->finder)->@*
+      : grep { $_->name =~ /\.css$/ && $_->name !~ /\.min\./ } $self->zilla->files->@*;
     };
   
     if(defined $self->output)

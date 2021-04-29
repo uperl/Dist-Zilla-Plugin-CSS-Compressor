@@ -1,10 +1,12 @@
-# Dist::Zilla::Plugin::CSS::Compressor
+# Dist::Zilla::Plugin::CSS::Compressor ![linux](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/windows/badge.svg) ![cygwin](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/cygwin/badge.svg) ![msys2-mingw](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/msys2-mingw/badge.svg)
 
 Compress CSS files
 
 # SYNOPSIS
 
-    [CSS::Compressor]
+```
+[CSS::Compressor]
+```
 
 # DESCRIPTION
 
@@ -21,19 +23,23 @@ you want compressed.  If this is not specified, it will compress all the CSS
 files that do not have a `.min.` in their filenames.  Roughly equivalent to
 this:
 
-    [FileFinder::ByName / CSSFiles]
-    file = *.css
-    skip = .min.
-    [CSS::Compressor]
-    finder = CSSFile
+```
+[FileFinder::ByName / CSSFiles]
+file = *.css
+skip = .min.
+[CSS::Compressor]
+finder = CSSFile
+```
 
 ## output\_regex
 
 Regular expression substitution used to generate the output filenames.  By default
 this is
 
-    [CSS::Compressor]
-    output_regex = /\.css$/.min.css/
+```
+[CSS::Compressor]
+output_regex = /\.css$/.min.css/
+```
 
 which generates a `foo.min.css` for each `foo.css`.
 
