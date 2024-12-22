@@ -1,4 +1,4 @@
-# Dist::Zilla::Plugin::CSS::Compressor ![linux](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/windows/badge.svg) ![msys2-mingw](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/msys2-mingw/badge.svg)
+# Dist::Zilla::Plugin::CSS::Compressor ![linux](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/windows/badge.svg)
 
 Compress CSS files
 
