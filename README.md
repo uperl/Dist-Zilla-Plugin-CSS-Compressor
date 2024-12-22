@@ -1,4 +1,4 @@
-# Dist::Zilla::Plugin::CSS::Compressor ![linux](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/windows/badge.svg) ![cygwin](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/cygwin/badge.svg) ![msys2-mingw](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/msys2-mingw/badge.svg)
+# Dist::Zilla::Plugin::CSS::Compressor ![linux](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/linux/badge.svg) ![macos](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/macos/badge.svg) ![windows](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/windows/badge.svg) ![msys2-mingw](https://github.com/uperl/Dist-Zilla-Plugin-CSS-Compressor/workflows/msys2-mingw/badge.svg)
 
 Compress CSS files
 
@@ -54,7 +54,7 @@ Graham Ollis <plicease@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Graham Ollis.
+This software is copyright (c) 2012-2024 by Graham Ollis.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
